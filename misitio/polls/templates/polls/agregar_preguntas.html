@@ -1,0 +1,24 @@
+<!-- Agregar preguntas -->
+<form action="/encuestas/validar_formulario/" method="post">
+
+{% csrf_token %}
+
+	<table>
+		<tr>
+			<td>Pregunta</td>
+			<td><input type="text" name="txtPregunta"></td>
+		</tr>
+		<tr>
+			<td>Fecha</td>
+			<td><input type="text" name="txtFecha"></td>
+		</tr>
+		<tr>
+			<td>Hora</td>
+			<td><input type="text" name="txtHora"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" name="btnGuardar" value="Guardar"></td>
+		</tr>
+	</table>
+</form>
